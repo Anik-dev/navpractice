@@ -10,21 +10,82 @@ body {
 nav {
     background-color: rgb(67, 236, 228);
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 nav ul {
     display: inline-flex;
     list-style: none;
 }
 nav ul li {
-    width: 180px;
-    margin: 15px 0px;
-    padding: 15px 10px;
+    width: 190px;
+    margin: 25px 0px;
+    padding: 15px 5px;
 }
 nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+nav ul li a i {
+    padding-right: 3px;
+    font-size: 20px;
+}
 .active, nav ul li:hover {
     background-color: rgb(21, 179, 55);
+}
+
+#sub-menu {
+    display: none;
+}
+nav ul li:hover #sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(67, 236, 228);
+    margin-top: 16px;
+    margin-left: -6px;
+}
+nav ul li:hover #sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover #sub-menu ul li {
+    width: 170px;
+    padding: 15px;
+    border-bottom: 2px dotted #fff;
+    text-align: left;
+}
+nav ul li:hover #sub-menu ul li:last-child {
+    border-bottom: none;
+}
+nav ul li:hover #sub-menu ul li i {
+    float: right;
+}
+
+#sub-menu-2 {
+    display: none;
+}
+#hover-me:hover #sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(67, 236, 228);
+    margin-top: -60px;
+    margin-left: 160px;
+}
+
+#another-page {
+    text-align: center;
+    margin-top: 250px;
+}
+#another-page a button {
+    background-color: rgb(67, 236, 228);
+    color: #fff;
+    font-size: 25px;
+    width: 400px;
+    padding: 20px 50px;
+    font-weight: 600;
+    border: 2px solid yellowgreen;
+}
+#another-page a button:hover {
+    color: yellowgreen;
+    font-size: 27px;
+    font-weight: 900;
 }

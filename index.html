@@ -6,19 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav Practice</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <script src="https://kit.fontawesome.com/bd7cb073a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <ul>
-            <li class="active"><a href="#">Home Page</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Servises</a></li>
-            <li><a href="#">Our policy</a></li>
-            <li><a href="#">Payment method</a></li>
-            <li><a href="#">Our projects</a></li>
-            <li><a href="#">Contact info</a></li>
+            <li class="active"><a href="#"><i class="fas fa-home"></i>Home Page</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i>About us</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i>Our Servises</a>
+                <div id="sub-menu">
+                    <ul>
+                        <li id="hover-me"><a href="#">Medical<i class="fas fa-chevron-right"></i></a>
+                            <div id="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Local</a></li>
+                                    <li><a href="#">Oversea</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="hover-me"><a href="#">Education<i class="fas fa-chevron-right"></i></a>
+                            <div id="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Local</a></li>
+                                    <li><a href="#">Oversea</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Traning</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fas fa-angle-double-down"></i>Our policy</a></li>
+            <li><a href="#"><i class="fas fa-money-check-alt"></i>Payment method</a>
+                <div id="sub-menu">
+                    <ul>
+                        <li><a href="#">Cash</a></li>
+                        <li><a href="#">Bkash</a></li>
+                        <li><a href="#">Card</a></li>
+                        <li><a href="#">Paypal</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fas fa-tasks"></i>Our projects</a></li>
+            <li><a href="#"><i class="fas fa-mobile-alt"></i>Contact info</a></li>
         </ul>
     </nav>
+    <div id="another-page">
+        <a href="#">
+            <button>Next practice page</button>
+        </a>
+    </div>
 </body>
 </html>
